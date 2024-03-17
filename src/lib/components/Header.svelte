@@ -41,7 +41,7 @@
 					<span class="text-4xl smtext-6xl pt-2">auto parts</span>
 				</h1>
 				<p class="text-sm sm:text-base text-white dark:text-white uppercase text-2xl py-5">
-					the quality is beyong excellence
+					the quality is beyond excellence
 				</p>
 				<div class="flex mt-8">
 					<a
