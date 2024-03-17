@@ -10,12 +10,12 @@ let products = [
 ]
 </script>
 
-<div class="text-gray-100 text-left p-10">
+<div class="text-gray-100 text-left py-10">
     <h1 class="font-bold text-3xl uppercase">featured products</h1>
 </div>
 
 <section
-    class="w-full mx-auto grid grid-cols-2 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-2 mt-10 mb-5 ">
+    class="w-full mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-2 mt-10 mb-5 ">
 
     {#each products as product }
     <ProductCard image="/images/{product.image}" name={product.name}/>
