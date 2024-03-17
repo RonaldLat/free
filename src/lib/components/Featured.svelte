@@ -10,7 +10,7 @@ let products = [
 ]
 </script>
 
-<div class="text-gray-100 text-center p-10">
+<div class="text-gray-100 text-left p-10">
     <h1 class="font-bold text-3xl uppercase">featured products</h1>
 </div>
 
