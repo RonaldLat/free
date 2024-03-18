@@ -23,8 +23,17 @@
 	];
 </script>
 
-<p class="text-gray-300 text-left uppercase text-2xl font-bold mb-5">dealers in</p>
-<div class="max-w-full mx-auto grid grid-cols-2 md:grid-cols-4 gap-1 mb-6 justify-center justify-items-center">
+<div class="uppercase text-center font-dancing">
+	<p class="text-gray-300 text-2xl mb-5">featured</p>
+	<p class="text-gray-300 text-2xl font-bold mb-5">new releases</p>
+	<p class="text-gray-300 normal-case mb-5">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nam facere esse quidem est
+		illum corrupti obcaecati! Dolorem voluptate molestiae voluptas. Inventore?
+	</p>
+</div>
+<div
+	class="max-w-full mx-auto grid grid-cols-2 md:grid-cols-4 gap-1 mb-6 justify-center justify-items-center"
+>
 	{#each dealerships as deal}
 		<Card2 category={deal.name} image="/images/{deal.image}" name={deal.name} />
 	{/each}

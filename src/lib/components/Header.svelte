@@ -1,36 +1,25 @@
-<main
-	class="bg-red-800 bg-gradient-to-r from-gray-500 to-red-800 relative overflow-hidden h-screen"
->
-	<div class="absolute top-0 sm:top-0 m-auto left-0 right-0 bg-blue-50 h-full brightness-50 -z-1">
+<main class="bg-black relative overflow-hidden h-screen">
+	<div class="absolute top-0 sm:top-0 m-auto left-0 right-0 bg-black h-full -z-1">
 		<img
-			src="https://images.unsplash.com/photo-1532974297617-c0f05fe48bff?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVkJTIwY2FyfGVufDB8fDB8fHww"
-			alt=""
-			class="w-full h-full object-cover object-center"
+			src="dj/djt1.png"
+			alt="DJ Stainer Portrait"
+			class="w-full h-full object-contain object-center"
 		/>
 	</div>
 
-	<header class="h-24 sm:h-32 flex items-center w-full relative">
-		<div class="container mx-auto px-6 flex items-center justify-between">
-			<div class="uppercase text-gray-800 dark:text-white font-black text-3xl">speedy nucho</div>
-			<div class="flex items-center">
-				<nav
-					class="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center hidden"
-				>
-					<a href="#" class="py-2 px-6 flex"> Home </a>
-					<a href="#" class="py-2 px-6 flex"> About </a>
-					<a href="#" class="py-2 px-6 flex"> Product </a>
-					<a href="#" class="py-2 px-6 flex"> Contact </a>
-				</nav>
-				<button class="lg:hidden flex flex-col ml-4">
-					<span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
-					<span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
-					<span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
-				</button>
-			</div>
+	<header class="h-24 sm:h-32 flex items-center w-full relative bg-transparent">
+		<div class="container mx-auto px-6 flex items-center justify-around">
+			<nav class="font-cuprum text-gray-800 dark:text-white uppercase text-md md:text-lg flex items-center">
+				<a href="#" class="py-2 px-6 flex"> About </a>
+				<a href="#" class="py-2 px-6 flex"> Product </a>
+				<div class="font-stalemate text-gray-800 normal-case dark:text-white font-black text-3xl">dj stainer77</div>
+				<a href="#" class="py-2 px-6 flex"> Contact </a>
+				<a href="#" class="py-2 px-6 flex"> Contact </a>
+			</nav>
 		</div>
 	</header>
 
-	<div class="  antialiased flex z-20 items-center overflow-hidden relative">
+	<div class="  antialiased flex z-20 items-center overflow-hidden relative hidden">
 		<div class="container mx-auto px-6 flex py-16">
 			<div class="sm:w-2/3 lg:w-2/5 flex flex-col">
 				<span class="w-20 h-2 bg-gray-800 dark:bg-white mb-12"> </span>

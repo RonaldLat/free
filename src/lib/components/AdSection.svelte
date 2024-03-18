@@ -6,11 +6,11 @@
 		<span class="mt-1 font-medium"
 			>Top quality, great selection and expert advice you can trust</span
 		>
-			<a
-				href="#"
-				class="uppercase block w-fit py-2 px-4 rounded-lg bg-red-600 border-2 border-transparent text-white text-sm mx-auto mt-6 hover:bg-red-400"
-			>
-				shop now
-			</a>
+		<a
+			href="#"
+			class="uppercase block w-fit py-2 px-4 rounded-lg bg-red-600 border-2 border-transparent text-white text-sm mx-auto mt-6 hover:bg-red-400"
+		>
+			shop now
+		</a>
 	</div>
 </div>
