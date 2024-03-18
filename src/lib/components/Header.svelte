@@ -1,4 +1,4 @@
-<main class="bg-black relative overflow-hidden h-screen">
+<main class="bg-[#222831] relative overflow-hidden h-screen">
 	<div class="absolute top-0 sm:top-0 m-auto left-0 right-0 bg-black h-full -z-1">
 		<img
 			src="dj/djt1.png"
@@ -8,13 +8,13 @@
 	</div>
 
 	<header class="h-24 sm:h-32 flex items-center w-full relative bg-transparent">
-		<div class="container mx-auto px-6 flex items-center justify-around">
-			<nav class="font-cuprum text-gray-800 dark:text-white uppercase text-md md:text-lg flex items-center">
+		<div class="w-full mx-auto px-6 flex items-center justify-around">
+			<nav class="font-cuprum text-gray-800 pb-4  w-full dark:text-white uppercase text-md md:text-lg flex items-center justify-between">
 				<a href="#" class="py-2 px-6 flex"> About </a>
 				<a href="#" class="py-2 px-6 flex"> Product </a>
-				<div class="font-stalemate text-gray-800 normal-case dark:text-white font-black text-3xl">dj stainer77</div>
+				<div class="font-stalemate text-gray-800 normal-case dark:text-white font-black text-5xl">dj stainer77</div>
 				<a href="#" class="py-2 px-6 flex"> Contact </a>
-				<a href="#" class="py-2 px-6 flex"> Contact </a>
+				<a href="#" class="py-2 px-6 flex "> Contact </a>
 			</nav>
 		</div>
 	</header>

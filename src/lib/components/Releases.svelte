@@ -6,22 +6,23 @@
 		{
 			name: 'Service Parts',
 			icon: 'material-symbols:home-repair-service-rounded',
-			image: 'wrench.png'
+			image: 'https://unsplash.com/photos/tiUvFxz4Dj0/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Mnx8cmVjb3JkJTIwcGxheWVyfGVufDB8fHx8MTcxMDc3NzAyNHww&force=true&w=640'
 		},
-		{ name: 'Engine Parts', icon: 'ph:engine-light', image: 'engine.png' },
+		{ name: 'Engine Parts', icon: 'ph:engine-light', image: 'https://unsplash.com/photos/FZWivbri0Xk/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8N3x8bXVzaWN8ZW58MHx8fHwxNzEwNzA0NDMxfDA&force=true&w=640' },
 		{
 			name: 'Lubricants',
 			icon: 'material-symbols:oil-barrel-outline-rounded',
-			image: 'lubricant.png'
+			image: 'https://unsplash.com/photos/0rmby-3OTeI/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTF8fG11c2ljfGVufDB8fHx8MTcxMDcwNDQzMXww&force=true&w=640'
 		},
 		//{ name: 'Gearbox Oils', icon: 'ph:gear-six-light', image: 'gearbox-oil.png' },
 		{
 			name: 'Suspensions',
 			icon: 'material-symbols:local-car-wash-outline-rounded',
-			image: 'suspension.png'
+			image: 'https://unsplash.com/photos/Fw-JHYPwS3U/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MzR8fGRqJTIwc2V0fGVufDB8fHx8MTcxMDc2MTU0MXww&force=true&w=640'
 		}
 	];
 </script>
+<img src="https://unsplash.com/photos/tiUvFxz4Dj0/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Mnx8cmVjb3JkJTIwcGxheWVyfGVufDB8fHx8MTcxMDc3NzAyNHww&force=true&w=640" alt="">
 
 <div class="uppercase text-center font-dancing">
 	<p class="text-gray-300 text-2xl mb-5">featured</p>
@@ -35,6 +36,6 @@
 	class="max-w-full mx-auto grid grid-cols-2 md:grid-cols-4 gap-1 mb-6 justify-center justify-items-center"
 >
 	{#each dealerships as deal}
-		<Card2 category={deal.name} image="/images/{deal.image}" name={deal.name} />
+		<Card2 category={deal.name} image={deal.image} name={deal.name} />
 	{/each}
 </div>
