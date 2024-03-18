@@ -2,11 +2,11 @@
 import Icon from '@iconify/svelte'
 
 let details = {
-address_1: "Bilhans Plaza",
+address_1: "Bilhams Plaza",
 address_2: "Lower Kirinyaga Road",
 phone_1: "0716 885166",
 phone_2: "0743 298722 ",
-email: "nemmuchauto1@gmail.com"
+email: "nemmnuchoauto1@gmail.com"
 
 }
 </script>

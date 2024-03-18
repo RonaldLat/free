@@ -1,5 +1,5 @@
 <main
-	class="dark:bg-gray-800 bg-gradient-to-r from-gray-500 to-red-800 relative overflow-hidden h-screen"
+	class="bg-red-800 bg-gradient-to-r from-gray-500 to-red-800 relative overflow-hidden h-screen"
 >
 	<div class="absolute top-0 sm:top-0 m-auto left-0 right-0 bg-blue-50 h-full brightness-50 -z-1">
 		<img

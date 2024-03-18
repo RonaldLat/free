@@ -2,7 +2,7 @@
 	class="w-full bg-gray-800 bg-center bg-cover bg-blend-overlay bg-[url('https://unsplash.com/photos/FMbWFDiVRPs/download?force=true&w=640')] max-w-s text-center"
 >
 	<div class="py-16 px-4 text-white bg-blend-darken">
-		<h5 class="text-xl font-bold">Clearanance & Discount</h5>
+		<h5 class="text-xl font-bold">Clearance & Discount</h5>
 		<span class="mt-1 font-medium"
 			>Top quality, great selection and expert advice you can trust</span
 		>

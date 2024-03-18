@@ -24,7 +24,11 @@
 </script>
 
 <p class="text-gray-300 text-left uppercase text-2xl font-bold mb-5">dealers in</p>
+<<<<<<< HEAD
 <div class="max-w-full mx-auto grid grid-cols-2 md:grid-cols-2 gap-1 mb-6 items-center">
+=======
+<div class="max-w-full mx-auto grid grid-cols-4 gap-1 mb-6 justify-center">
+>>>>>>> b87766c (minor fixes)
 	{#each dealerships as deal}
 		<Card2 category={deal.name} image="/images/{deal.image}" name={deal.name} />
 	{/each}
