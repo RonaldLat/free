@@ -37,7 +37,7 @@
 
         {#each releases as release }
 
-            <div class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
+            <div class="overflow-hidden bg-cover bg-center rounded-lg cursor-pointer h-96 group"
                 style="background-image:url('{release.image}')">
                 <div
                     class="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
