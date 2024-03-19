@@ -6,6 +6,8 @@ export default {
       fontFamily:{
         cuprum: ['Cuprum', "sans-serif"],
         stalemate: ['"Stalemate"', "cursive"],
+        unbounded: ['"Undbounded"', "sans-serif"],
+        piazzolla: ['"Piazzolla"', "serif"],
       }
     }
 	},

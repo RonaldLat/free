@@ -11,6 +11,4 @@
 <Header />
 <Platforms />
 <Releases />
-<Featured />
 <AdSection />
-<Footer />
