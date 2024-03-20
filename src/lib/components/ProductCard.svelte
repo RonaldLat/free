@@ -1,22 +1,26 @@
 <script>
-	export let image;
-	export let name;
+	export let image, name, id;
 </script>
 
 <div
-	class="max-w-md w-full bg-white shadow-md rounded-xl duration-500 lg:hover:scale-105 lg:hover:shadow-xl"
+	class="max-w-md w-full bg-gray-200 shadow-md rounded-xl duration-500 lg:hover:scale-105 lg:hover:shadow-xl"
 >
-	<a href="#">
-		<img src={image} alt="Product" class="h-80 w-full object-cover rounded-t-xl" />
+	<div>
+		<img
+			src={image}
+			alt="Product"
+			class="h-60 md:h-72 w-full object-contain object-center rounded-t-xl"
+		/>
 		<div class="px-4 py-3 w-72">
 			<span class="text-gray-400 mr-3 uppercase text-xs">Brand</span>
-			<p class="text-lg font-bold text-black truncate block capitalize">{name}</p>
+			<p class="text-lg font-bold text-red-600 truncate block uppercase">{name}</p>
 			<div class="flex items-center">
-				<p class="text-lg font-semibold text-black cursor-auto my-3">Ksh.</p>
+				<p class=" hidden text-lg font-semibold text-black cursor-auto my-3">Ksh.</p>
 				<del>
-					<p class="text-sm text-gray-600 cursor-auto ml-2">Ksh.</p>
+					<p class="hidden text-sm text-gray-600 cursor-auto ml-2">Ksh.</p>
 				</del>
-				<div class="ml-auto">
+				<a class="underline underline-offset-2" href="/products/{id}">Description</a>
+				<div class="ml-auto hidden">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="20"
@@ -36,5 +40,5 @@
 				</div>
 			</div>
 		</div>
-	</a>
+	</div>
 </div>

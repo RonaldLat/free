@@ -1,9 +1,31 @@
 import productData from '$lib/data/productData.js'; // Adjust the path as needed
 
-import { error } from '@sveltejs/kit';
 import { json } from '@sveltejs/kit';
 /** @type {import('./$types').RequestHandler} */
-export function GET(event) {
-  console.log(productData)
-	return (json(productData));
+export function GET({ url }) {
+	let products;
+	console.log(url.searchParams.get('limit'));
+	const limit = url.searchParams.get('limit');
+	const id = url.searchParams.get('id');
+
+	if (id) {
+		const product = productData.find((product) => product.id === id);
+		if (product) {
+			return json(product);
+		} else {
+			return {
+				status: 404,
+				body: { message: 'Product not found' }
+			};
+		}
+	}
+
+	if (limit) {
+		const numberOfProducts = parseInt(limit, 10);
+		products = productData.slice(0, numberOfProducts);
+	} else {
+		products = productData;
+	}
+
+	return json(products);
 }

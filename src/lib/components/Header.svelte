@@ -45,8 +45,8 @@
 				</p>
 				<div class="flex mt-8">
 					<a
-						href="#"
-						class="uppercase py-2 px-4 rounded-lg bg-red-600 border-2 border-transparent text-white text-md mr-4 hover:bg-red-400"
+						href="/products"
+						class="uppercase cursor-pointer py-2 px-4 rounded-lg bg-red-600 border-2 border-transparent text-white text-md mr-4 hover:bg-red-400"
 					>
 						shop now
 					</a>
