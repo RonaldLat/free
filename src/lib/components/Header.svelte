@@ -1,23 +1,63 @@
-<div class="flex flex-wrap">
-    <div class="w-full sm:w-8/12 mb-10">
-      <div class="container mx-auto h-full sm:p-10">
-        <nav class="flex px-4 justify-between items-center">
-          <div class="text-4xl font-bold">
-            Plant<span class="text-green-700">.</span>
-          </div>
-          <div>
-            <img src="https://image.flaticon.com/icons/svg/497/497348.svg" alt="" class="w-8">
-          </div>
-        </nav>
-        <header class="container px-4 lg:flex mt-10 items-center h-full lg:mt-0">
-          <div class="w-full">
-            <h1 class="text-4xl lg:text-6xl font-bold">Find your <span class="text-green-700">greeny</span> stuff for your room</h1>
-            <div class="w-20 h-2 bg-green-700 my-4"></div>
-            <p class="text-xl mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae maiores neque eaque ea odit placeat, tenetur illum distinctio nulla voluptatum a corrupti beatae tempora aperiam quia id aliquam possimus aut.</p>
-            <button class="bg-green-500 text-white text-2xl font-medium px-4 py-2 rounded shadow">Learn More</button>
-          </div>
-        </header>
-      </div>
-    </div>
-    <img src="https://images.unsplash.com/photo-1536147116438-62679a5e01f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="Leafs" class="w-full h-48 object-cover sm:h-screen sm:w-4/12">
-  </div>
+<main
+	class="bg-red-800 bg-gradient-to-r from-gray-500 to-red-800 relative overflow-hidden h-screen"
+>
+	<div class="absolute top-0 sm:top-0 m-auto left-0 right-0 bg-blue-50 h-full brightness-50 -z-1">
+		<img
+			src="https://images.unsplash.com/photo-1532974297617-c0f05fe48bff?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVkJTIwY2FyfGVufDB8fDB8fHww"
+			alt=""
+			class="w-full h-full object-cover object-center"
+		/>
+	</div>
+
+	<header class="h-24 sm:h-32 flex items-center w-full relative">
+		<div class="container mx-auto px-6 flex items-center justify-between">
+			<div class="uppercase text-gray-800 dark:text-white font-black text-3xl">speedy nucho</div>
+			<div class="flex items-center">
+				<nav
+					class="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center hidden"
+				>
+					<a href="#" class="py-2 px-6 flex"> Home </a>
+					<a href="#" class="py-2 px-6 flex"> About </a>
+					<a href="#" class="py-2 px-6 flex"> Product </a>
+					<a href="#" class="py-2 px-6 flex"> Contact </a>
+				</nav>
+				<button class="lg:hidden flex flex-col ml-4">
+					<span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
+					<span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
+					<span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<div class="  antialiased flex z-20 items-center overflow-hidden relative">
+		<div class="container mx-auto px-6 flex py-16">
+			<div class="sm:w-2/3 lg:w-2/5 flex flex-col">
+				<span class="w-20 h-2 bg-gray-800 dark:bg-white mb-12"> </span>
+				<h1
+					class="font-bebas-neue uppercase text-4xl smtext-5xl font-black flex flex-col leading-none text-white"
+				>
+					buy trustworthy
+					<span class="text-4xl smtext-6xl pt-2">auto parts</span>
+				</h1>
+				<p class="text-sm sm:text-base text-white dark:text-white uppercase text-2xl py-5">
+					the quality is beyond excellence
+				</p>
+				<div class="flex mt-8">
+					<a
+						href="#"
+						class="uppercase py-2 px-4 rounded-lg bg-red-600 border-2 border-transparent text-white text-md mr-4 hover:bg-red-400"
+					>
+						shop now
+					</a>
+					<a
+						href="#"
+						class="uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-red-600 text-red-600 dark:text-white hover:bg-red-500 hover:text-white text-md"
+					>
+						contact us
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>

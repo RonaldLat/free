@@ -1,5 +1,7 @@
 <script>
-  import "../app.css";
+	import '../app.css';
 </script>
 
-<slot />
+<main class="bg-black max-w-full overflow-hidden">
+	<slot />
+</main>
