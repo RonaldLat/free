@@ -15,6 +15,6 @@
 	class="w-full mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-2 mt-10 mb-5"
 >
 	{#each products as product}
-		<ProductCard image="/files/{product.imageUrl}" name={product.name} id={product.id} />
+		<ProductCard image="/files/{product.imageUrl}" name={product.name} id={product.id} category={product.category}/>
 	{/each}
 </section>

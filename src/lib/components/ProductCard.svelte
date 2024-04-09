@@ -1,5 +1,5 @@
 <script>
-	export let image, name, id;
+	export let image, name, id, category;
 </script>
 
 <div
@@ -12,7 +12,7 @@
 			class="h-60 md:h-72 w-full object-contain object-center rounded-t-xl"
 		/>
 		<div class="px-4 py-3 w-72">
-			<span class="text-gray-400 mr-3 uppercase text-xs">Brand</span>
+			<span class="text-gray-400 mr-3 uppercase text-xs">{category}</span>
 			<p class="text-lg font-bold text-red-600 truncate block uppercase">{name}</p>
 			<div class="flex items-center">
 				<p class=" hidden text-lg font-semibold text-black cursor-auto my-3">Ksh.</p>

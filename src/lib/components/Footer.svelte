@@ -10,17 +10,14 @@
 	};
 </script>
 
-<div class="bg-gray-100 py-12">
+<div class="bg-black text-gray-300 py-12">
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="lg:text-center">
 			<h2 class="text-base text-red-600 font-semibold tracking-wide uppercase">Location</h2>
-			<p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-600 sm:text-4xl">
+			<p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-200 sm:text-4xl">
 				Our Store
 			</p>
-			<p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam voluptatum
-				cupiditate veritatis in, accusamus quisquam.
-			</p>
+			<p class="mt-4 max-w-2xl  text-gray-300 lg:mx-auto">Welcome to our auto spare parts website! We're dedicated to providing you with the highest quality auto parts at competitive prices. <br> We're committed to helping you find the right parts for your vehicle.</p>
 		</div>
 
 		<div class="mt-10">
@@ -35,8 +32,8 @@
 						</div>
 					</div>
 					<div class="ml-4">
-						<dt class="text-lg leading-6 font-medium text-gray-900">Address</dt>
-						<dd class="mt-2 text-base text-gray-500">
+						<dt class="text-lg leading-6 font-medium font-semibold text-gray-300">Address</dt>
+						<dd class="mt-2 text-base text-gray-300">
 							{details.address_1}<br />
 							{details.address_2}
 						</dd>
@@ -53,10 +50,12 @@
 						</div>
 					</div>
 					<div class="ml-4">
-						<dt class="text-lg leading-6 font-medium text-gray-900">Phone</dt>
-						<dd class="mt-2 text-base text-gray-500">
-							{details.phone_1} <br />
+						<dt class="text-lg leading-6 font-medium font-semibold text-gray-300">Phone</dt>
+						<dd class="mt-2 text-base text-gray-300">
+							<a href="tel:{details.phone_1}">{details.phone_1}</a> <br />
+              <a href="tel:{details.phone_2}">
 							{details.phone_2}
+              </a>
 						</dd>
 					</div>
 				</div>
@@ -71,9 +70,11 @@
 						</div>
 					</div>
 					<div class="ml-4">
-						<dt class="text-lg leading-6 font-medium text-gray-900">Email</dt>
-						<dd class="mt-2 text-base text-gray-500">
+						<dt class="text-lg leading-6 font-medium font-semibold text-gray-300">Email</dt>
+						<dd class="mt-2 text-base text-gray-300">
+              <a href="mailto:{details.email}">
 							{details.email}
+              </a>
 						</dd>
 					</div>
 				</div>
@@ -88,8 +89,8 @@
 						</div>
 					</div>
 					<div class="ml-4">
-						<dt class="text-lg leading-6 font-medium text-gray-900">Store Hours</dt>
-						<dd class="mt-2 text-base text-gray-500">
+						<dt class="text-lg leading-6 font-medium font-semibold text-gray-300">Store Hours</dt>
+						<dd class="mt-2 text-base text-gray-300">
 							Monday - Saturday: 7am to 6pm<br />
 							Saturday: 10am to 6pm<br />
 						</dd>
@@ -100,8 +101,12 @@
 	</div>
 </div>
 
-<footer>
-	<p class="text-sm text-gray-100 py-3 pl-5">
+<footer class="bg-black text-gray-100 px-5">
+	<p class="text-sm text-gray-100 py-3  ">
 		&copy {new Date().getFullYear()} Speedy Nucho Auto Spares. All Rights Reserved.
 	</p>
+  <ul class="text-red-400 flex gap-4">
+  <li><a href="/">Home</a></li>
+  <li><a href="/products">Products</a></li>
+  </ul>
 </footer>

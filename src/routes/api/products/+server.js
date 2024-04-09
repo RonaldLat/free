@@ -21,9 +21,9 @@ export function GET({ url }) {
 		}
 	}
 	if (category) {
-		const product = productData.find((product) => product.category === category);
-		if (product) {
-			return json(product);
+		const products = productData.filter((product) => product.category === category);
+		if (products) {
+			return json(products);
 		} else {
 			return {
 				status: 404,

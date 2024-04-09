@@ -11,7 +11,7 @@
 		class="w-full  items-center justify-items-center lg:grid-cols-4 mx-auto grid p-4 grid-cols-1 md:grid-cols-2 gap-x-2 lg:gap-7 gap-6 mb-6 justify-center"
 	>
 		{#each products as product}
-			<ProductCard image="/files/{product.imageUrl}" name={product.name} id={product.id} />
+			<ProductCard image="/files/{product.imageUrl}" name={product.name} id={product.id} category={product.category} />
 		{/each}
 	</div>
 </div>

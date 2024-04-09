@@ -1,5 +1,6 @@
 <script>
-	import '../app.css';
+	import Footer from '$lib/components/Footer.svelte';
+import '../app.css';
   import Icon from '@iconify/svelte';
 </script>
 
@@ -7,3 +8,4 @@
 <Icon icon="material-symbols:menu-rounded" class="hidden text-5xl text-gray-200 fixed top-2 right-2 md:hidden"/>
 	<slot />
 </main>
+<Footer/>

@@ -15,4 +15,3 @@
 <Featured {data}/>
 <a class="text-gray-200 text-center block cursor-pointer underline-offset-4 underline" href="/products">Load more</a>
 <AdSection />
-<Footer />
