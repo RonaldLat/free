@@ -21,7 +21,7 @@
 					<a href="#" class="py-2 px-6 flex"> Product </a>
 					<a href="#" class="py-2 px-6 flex"> Contact </a>
 				</nav>
-				<button class="lg:hidden flex flex-col ml-4">
+				<button class="lg:hidden flex flex-col ml-4 hidden">
 					<span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
 					<span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
 					<span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
