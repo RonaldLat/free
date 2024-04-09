@@ -56,7 +56,106 @@ Provides reserve protection during heavy use and abuse
 		imageUrl: 'product6.png',
 		description: `Nissan recommends NS-2 for use in most CVT automatic transmissions.
 Nissan NS-2 Transmission Fluid uses a unique formulation of high quality special friction modifiers and other additives to ensure stable, precise operation over long periods of use.`
-	}
+	},
+	{
+		id: '7',
+		price: '',
+		name: 'MAZDA SPARK PLUGS',
+		category: 'engine parts',
+		imageUrl: 'image6.png',
+		description: `It takes a spark plug to keep your engine firing on all cylinders. A fouled or dirty plug will cause your engine to misfire. The plugs need to be checked for dirt and replaced as needed. OEM Mazda spark plugs are made to keep your engine firing efficiently.
+OEM Mazda spark plugs are made from the best materials for the longest lasting performance.
+OEM Mazda spark plugs last as long as the original spark plugs in your Mazda.
+A fresh set of OEM Mazda spark plugs will improve your engine performance and fuel efficiency, so check and replace them when you notice poor performance.
+`
+	},
+	{
+		id: '8',
+		price: '',
+		name: 'TOYOTA LEXUS SPARK PLUGS',
+		category: 'engine parts',
+		imageUrl: 'image9.png',
+		description: `Spark plugs are crucial components for the proper functioning of a vehicle’s ignition system and engine performance. Recognizing signs of worn-out spark plugs, such as misfires, reduced fuel efficiency, and difficulty starting, is crucial for maintaining optimal combustion and overall engine health.
+`
+	},
+	{
+		id: '9',
+		price: '',
+		name: 'STARTER, NISSAN X-TRAIL',
+		category: 'engine parts',
+		imageUrl: 'image8.png',
+		description: `The starter in a Nissan X-Trail is a crucial component responsible for initiating the engine’s combustion process. When you turn the ignition key, the starter motor engages with the flywheel, allowing the engine to crank and start running. The starter motor is typically located near the engine, close to the transmission bell housing.
+To access it, you may need to remove certain components, such as the air intake duct or other parts obstructing direct access.
+Refer to your vehicle’s service manual or consult a professional mechanic for precise instructions on locating and accessing the starter.
+`	},
+	{
+		id: '10',
+		price: '',
+		name: 'TOYOTA AIR FILTER',
+		category: 'service parts',
+		imageUrl: 'image12.png',
+		description: `  Akin to the normal home air-conditioner, vehicles usually contain a similar component known as the cabin Air filter which purifies the air in the passenger cabin and has many other advantages:
+
+• Removes dust, pollen and other unwanted particles from the outside air before it enters the cabin.
+• Purifies the recirculated air inside your vehicle.
+• Reduces problems related to allergies.
+• Protects the components of your air-conditioner.
+• Eliminates exhaust gas odors and other unpleasant odors.
+• Prevents the accumulation of harmful substances which corrode the parts of the air conditioner.
+  `
+  },
+	{
+		id: '11',
+		price: '',
+		name: 'TOYOTA AIR FILTER',
+		category: 'service parts',
+		imageUrl: 'image10.png',
+		description: ` An oil filter is a mechanical device designed to remove contaminants, dirt, and unburned fuel from circulating engine oil, transmission oil, lubricating oil, or hydraulic oil. Its primary purpose is to ensure that only clean, filtered oil reaches the engine, thereby protecting the engine from wear and maintaining optimal performance. Oil filters are commonly used in internal-combustion engines for motor vehicles (both on- and off-road), powered aircraft, railway locomotives, ships, boats, and static such as generators and pumps.
+
+  `
+  },
+	{
+		id: '12',
+		price: '',
+		name: 'OG GENERAL MP3 GREASE',
+		category: 'lubricants',
+		imageUrl: 'image11.png',
+		description: ` This high-quality, multipurpose grease is based on an ISO VG 160 mineral oil and has an NLGI grade of 3. It is formulated to offer protection against rusting and water washout in general-purpose automotive applications at moderate temperatures and loads. Some key features and benefits include:
+Wide operating temperature range.
+Good resistance to water washout.
+Extra protection against rust and corrosion.
+Excellent structural stability.
+Lead, chlorine, and nitrite-free formulation.
+Mobilgrease MP 3 is recommended for lubricating automotive chassis components, wheel bearings, clutch bearings, universal joints, and ball joints in steering and suspension systems of passenger cars, trucks, farm tractors, and other mobile equipment operating under moderate conditions. Its recommended operating temperature range is from -20°C to 120°C1.
+  `
+  },
+	{
+		id: '13',
+		price: '',
+		name: 'MAXIT ENGINE OIL',
+		category: 'lubricants',
+		imageUrl: 'image13.png',
+		description: ` Maxit engine oil is a long multi-grade engine oil specially designed for both natural aspirated and turbocharged diesel engines. It provides optimal lubrication and protection to keep your engine running smoothly. If you’re interested, you can find Maxit Oil available in either 5L or 20L containers.
+
+  `
+  },
+	{
+		id: '14',
+		price: '',
+		name: 'MAXLUBE',
+		category: 'lubricants',
+		imageUrl: 'image14.png',
+		description: `Maxlube,an excellent lubricant with excipients which enhances the lubrication characteristics of these products, improving their performance in various applications. Here are some key details about Maxlube® additives:
+Maxlube® 200:
+Lubricity is attained at low addition levels in oil-based systems.
+Water soluble, provides extreme pressure (EP), anti-wear, and good cleaning in metalworking products1.
+Maxlube MV:
+Recommended as a general-purpose lubricant in metalworking fluids.
+Soluble in oil and easily emulsified.
+Improves the wetting characteristics of fats and oils2.
+These additives play a crucial role in maintaining machinery efficiency and extending the lifespan of metalworking equipment. Whether it’s cutting, grinding, or forming, Maxlube® additives contribute to smoother operations and better results.
+  `
+  },
 	// Add more products as needed
 ];
 
