@@ -51,7 +51,7 @@
 						shop now
 					</a>
 					<a
-						href="#"
+						href="tel:0743298722"
 						class="uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-red-600 text-red-600 dark:text-white hover:bg-red-500 hover:text-white text-md"
 					>
 						contact us
