@@ -92,7 +92,6 @@
 						<dd class="mt-2 text-base text-gray-500">
 							Monday - Saturday: 7am to 6pm<br />
 							Saturday: 10am to 6pm<br />
-							Sunday: 12pm to 4pm
 						</dd>
 					</div>
 				</div>

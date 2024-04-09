@@ -7,6 +7,7 @@ export function GET({ url }) {
 	console.log(url.searchParams.get('limit'));
 	const limit = url.searchParams.get('limit');
 	const id = url.searchParams.get('id');
+	const category = url.searchParams.get('category');
 
 	if (id) {
 		const product = productData.find((product) => product.id === id);
@@ -19,6 +20,18 @@ export function GET({ url }) {
 			};
 		}
 	}
+	if (category) {
+		const product = productData.find((product) => product.category === category);
+		if (product) {
+			return json(product);
+		} else {
+			return {
+				status: 404,
+				body: { message: 'Product not found' }
+			};
+		}
+	}
+
 
 	if (limit) {
 		const numberOfProducts = parseInt(limit, 10);
