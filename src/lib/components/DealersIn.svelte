@@ -6,13 +6,15 @@
 		{
 			name: 'Service Parts',
 			icon: 'material-symbols:home-repair-service-rounded',
-			image: 'wrench.png'
+			image: 'wrench.png',
+      categoryUrl: 'service-parts'
 		},
-		{ name: 'Engine Parts', icon: 'ph:engine-light', image: 'engine.png' },
+		{ name: 'Engine Parts', icon: 'ph:engine-light', image: 'engine.png', catergoryUrl: 'engine parts'},
 		{
 			name: 'Lubricants',
 			icon: 'material-symbols:oil-barrel-outline-rounded',
-			image: 'lubricant.png'
+			image: 'lubricant.png',
+      categoryUrl: 'service-parts'
 		},
 		//{ name: 'Gearbox Oils', icon: 'ph:gear-six-light', image: 'gearbox-oil.png' },
 		{
@@ -28,6 +30,8 @@
 	class="max-w-full mx-auto grid grid-cols-2 md:grid-cols-4 gap-1 mb-6 justify-center justify-items-center"
 >
 	{#each dealerships as deal}
+    <a href={deal.catergoryUrl}>
 		<Card2 category={deal.name} image="/images/{deal.image}" name={deal.name} />
+    </a>
 	{/each}
 </div>
