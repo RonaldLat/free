@@ -161,6 +161,45 @@ Improves the wetting characteristics of fats and oils2.
 These additives play a crucial role in maintaining machinery efficiency and extending the lifespan of metalworking equipment. Whether it’s cutting, grinding, or forming, Maxlube® additives contribute to smoother operations and better results.
   `
   },
+	{
+		id: '15',
+		price: '',
+		name: 'CV JOINTS',
+		category: 'suspensions',
+		imageUrl: 'image15.png',
+		description: `
+All front-wheel drive cars have Constant Velocity joints or CV joints on both ends of the drive shafts (half shafts). Inner CV joints connect the drive shafts to the transmission, while the outer CV joints connect the drive shafts to the wheels. The CV joints are needed to transfer the torque from the transmission to the drive wheels at a constant speed, while accommodating the up-and-down motion of the suspension. In front-wheel drive cars, CV joints deliver the torque to the front wheels during turns.
+    `
+  },
+	{
+		id: '16',
+		price: '',
+		name: 'BEARINGS',
+		category: 'suspensions',
+		imageUrl: 'image16.png',
+		description: `
+    The bearing in its current form was developed towards the end of the 19th century. It was initially made by hand.
+Nowadays, bearings are one of the most commonly used machine parts because their rolling motion make almost all movements easier and they help reduce friction.
+
+Bearings have two key functions:
+They transfer motion, i.e. they support and guide components which turn relative to one another
+They transmit forces
+    `
+  },
+	{
+		id: '17',
+		price: '',
+		name: 'ARM BUSHES',
+		category: 'suspensions',
+		imageUrl: 'image17.png',
+		description: `
+    Control arms are a part of both your steering and suspension system and allow your car’s wheels to move with the dips and rises in the road, all while keeping the cab at a level height. Your vehicle has two control arms, a lower control arm, and an upper control arm.
+
+Your vehicle’s upper control arm also helps the front wheels to turn, making them an integral part of your steering system too.
+
+At the end of each control arm, a ball joint connects it to the wheel of your car. The other side connects to the frame of your vehicle through bolts that go through bushings. These are your control arm bushings.
+    `
+  },
 	// Add more products as needed
 ];
 
