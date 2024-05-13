@@ -9,7 +9,7 @@
 		<img
 			src={image}
 			alt="Product"
-			class="h-60 md:h-72 w-full object-contain object-center rounded-t-xl"
+			class="h-60 md:h-72 w-full object-contain object-center rounded-sm"
 		/>
 		<div class="px-4 py-3 w-72">
 			<span class="text-gray-400 mr-3 uppercase text-xs">{category}</span>

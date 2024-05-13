@@ -176,7 +176,7 @@ All front-wheel drive cars have Constant Velocity joints or CV joints on both en
 		price: '',
 		name: 'BEARINGS',
 		category: 'suspensions',
-		imageUrl: 'image16.png',
+		imageUrl: 'image16.jpg',
 		description: `
     The bearing in its current form was developed towards the end of the 19th century. It was initially made by hand.
 Nowadays, bearings are one of the most commonly used machine parts because their rolling motion make almost all movements easier and they help reduce friction.
@@ -191,7 +191,7 @@ They transmit forces
 		price: '',
 		name: 'ARM BUSHES',
 		category: 'suspensions',
-		imageUrl: 'image17.png',
+		imageUrl: 'image17.jpg',
 		description: `
     Control arms are a part of both your steering and suspension system and allow your car’s wheels to move with the dips and rises in the road, all while keeping the cab at a level height. Your vehicle has two control arms, a lower control arm, and an upper control arm.
 
