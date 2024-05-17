@@ -1,12 +1,10 @@
 <script>
-	import ProductCard from './ProductCard.svelte';
+	import ProductCard from '$lib/components/ProductCard.svelte';
 
-	let products = [
-		{ name: 'Product Name', image: '19.jpg' },
-		{ name: 'Product Name', image: '23.jpg' },
-		{ name: 'Product Name', image: '24.jpg' },
-		{ name: 'Product Name', image: '26.jpg' }
-	];
+	export let data;
+	let { products } = data;
+
+	console.log(products);
 </script>
 
 <div class="text-gray-100 text-left py-10">
@@ -17,14 +15,6 @@
 	class="w-full mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-2 mt-10 mb-5"
 >
 	{#each products as product}
-		<ProductCard image="/images/{product.image}" name={product.name} />
+		<ProductCard image="/files/{product.imageUrl}" name={product.name} id={product.id} category={product.category}/>
 	{/each}
 </section>
-
-<div
-	class="w-full bg-gray-900 items-center justify-items-center lg:grid-cols-4 mx-auto grid p-4 grid-cols-1 gap-x-2 gap-1 mb-6 justify-center hidden"
->
-	{#each products as product}
-		<ProductCard image="/images/{product.image}" name={product.name} />
-	{/each}
-</div>
