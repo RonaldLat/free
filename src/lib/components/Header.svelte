@@ -11,7 +11,7 @@
 
 	<header class="h-24 sm:h-32 flex items-center w-full relative">
 		<div class="container mx-auto px-6 flex items-center justify-between">
-			<div class="uppercase text-gray-800 dark:text-white font-black text-3xl">speedy nucho</div>
+			<div class="uppercase text-gray-50 dark:text-white font-black text-4xl">speedy nucho</div>
 			<div class="flex items-center">
 				<nav
 					class="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center hidden"
@@ -35,7 +35,7 @@
 			<div class="sm:w-2/3 lg:w-2/5 flex flex-col">
 				<span class="w-20 h-2 bg-gray-800 dark:bg-white mb-12"> </span>
 				<h1
-					class="font-bebas-neue uppercase text-4xl smtext-5xl font-black flex flex-col leading-none text-white"
+					class="font-bebas-neue uppercase text-3xl smtext-5xl font-black flex flex-col leading-none text-white"
 				>
 					buy trustworthy
 					<span class="text-4xl smtext-6xl pt-2">auto parts</span>
