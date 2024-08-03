@@ -68,7 +68,7 @@
 // https://v0.dev/t/S2OpeykthkM
 -->
 
-<section class="w-full h-[65vh] py-12 md:py-24 lg:py-32 bg-[url('autoparts1.jpeg')] bg-cover bg-no-repeat  bg-gray-800 bg-center text-gray-500 bg-blend-overlay">
+<section class="w-full h-[65vh] py-12 md:py-24 lg:py-32 bg-[url('/autoparts1.jpeg')] bg-cover bg-no-repeat  bg-gray-800 bg-center text-gray-500 bg-blend-overlay">
   <div class="container px-4 md:px-6">
     <div class="flex flex-col items-center justify-center space-y-6 text-center">
       <div class="space-y-2">
