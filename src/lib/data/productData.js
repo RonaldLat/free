@@ -96,7 +96,7 @@ Refer to your vehicle’s service manual or consult a professional mechanic for 
 	{
 		id: '10',
 		price: '',
-		name: 'TOYOTA AIR FILTER',
+		name: 'TOYOTA OIL FILTER',
 		category: 'service-parts',
 		imageUrl: 'image12.png',
 		description: `  Akin to the normal home air-conditioner, vehicles usually contain a similar component known as the cabin Air filter which purifies the air in the passenger cabin and has many other advantages:
@@ -112,7 +112,7 @@ Refer to your vehicle’s service manual or consult a professional mechanic for 
 	{
 		id: '11',
 		price: '',
-		name: 'TOYOTA AIR FILTER',
+		name: 'TOYOTA OIL FILTER',
 		category: 'service-parts',
 		imageUrl: 'image10.png',
 		description: ` An oil filter is a mechanical device designed to remove contaminants, dirt, and unburned fuel from circulating engine oil, transmission oil, lubricating oil, or hydraulic oil. Its primary purpose is to ensure that only clean, filtered oil reaches the engine, thereby protecting the engine from wear and maintaining optimal performance. Oil filters are commonly used in internal-combustion engines for motor vehicles (both on- and off-road), powered aircraft, railway locomotives, ships, boats, and static such as generators and pumps.
