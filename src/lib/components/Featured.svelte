@@ -26,7 +26,7 @@
 
 <div class="bg-[#d5d5d8]">
   <div class="py-8 px-4 md:px-6">
-    <h2 class="text-2xl font-bold md:text-3xl capitalize">Featured products</h2>
+    <h2 class="font-gupter text-2xl font-bold md:text-3xl capitalize">Featured products</h2>
   </div>
   <section class="grid grid-cols-1 gap-6 p-4 md:grid-cols-3 md:p-6">
 	{#each products as product}
@@ -43,7 +43,7 @@
           style="aspect-ratio: 500 / 400; object-fit: cover;"
         />
         <div class="p-4 bg-black h-full text-white">
-          <span class="text-sm font-medium capitalize text-gray-300">{product.category}</span>
+          <span class="font-gupter text-sm font-medium capitalize text-gray-300">{product.category}</span>
           <h3 class="text-lg font-bold uppercase text-gray-100">{product.name}</h3>
         </div>
       </div>

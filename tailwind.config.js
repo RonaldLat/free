@@ -5,7 +5,9 @@ export default {
 	theme: {
 		extend: {
       fontFamily:{
-        jersey: ['"Jersey 20"', ...defaultTheme.fontFamily.sans]
+        jersey: ['"Jersey 20"', ...defaultTheme.fontFamily.sans],
+        gupter: ['"Gupter"', ...defaultTheme.fontFamily.sans],
+        roboto: ['"Roboto"', ...defaultTheme.fontFamily.sans],
       }
     }
 	},

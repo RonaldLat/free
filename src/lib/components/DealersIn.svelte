@@ -51,7 +51,7 @@
 
 <div class="bg-[#252B2B] text-[#BFBFBF]">
   <div class="py-8 px-4 md:px-6">
-    <h2 class="text-2xl font-bold md:text-3xl">Our Product Categories</h2>
+    <h2 class="font-gupter text-2xl font-bold md:text-3xl">Our Product Categories</h2>
   </div>
   <section class="grid grid-cols-1 gap-6 p-4 md:grid-cols-2 lg:grid-cols-4 md:p-6">
 	{#each dealerships as deal}
@@ -68,7 +68,7 @@
         style="aspect-ratio: 300 / 300; object-fit: cover;"
       />
       <div class="p-4 bg-background">
-        <h3 class="text-lg font-semibold  md:text-xl">{deal.name}</h3>
+        <h3 class="font-gupter text-lg font-semibold  md:text-xl">{deal.name}</h3>
         <p class="text-sm text-gray-400">{deal.info}</p>
       </div>
     </div>
