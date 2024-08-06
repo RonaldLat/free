@@ -68,8 +68,8 @@
         style="aspect-ratio: 300 / 300; object-fit: cover;"
       />
       <div class="p-4 bg-background">
-        <h3 class="font-gupter text-lg font-semibold  md:text-xl">{deal.name}</h3>
-        <p class="text-sm text-gray-400">{deal.info}</p>
+        <h3 class="font-gupter text-lg text-gray-100 font-semibold  md:text-xl">{deal.name}</h3>
+        <p class="text-sm text-gray-300">{deal.info}</p>
       </div>
     </div>
 	{/each}

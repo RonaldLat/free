@@ -49,4 +49,9 @@
       </div>
   {/each}
   </section>
+  <div class="py-4 text-center">
+    <a class="  text-red-600 hover:underline" href="#">
+      View More
+    </a>
+  </div>
 </div>
