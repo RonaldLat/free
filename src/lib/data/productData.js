@@ -96,7 +96,7 @@ Refer to your vehicle’s service manual or consult a professional mechanic for 
 	{
 		id: '10',
 		price: '',
-		name: 'TOYOTA OIL FILTER',
+		name: 'TOYOTA AIR FILTER',
 		category: 'service-parts',
 		imageUrl: 'image12.png',
 		description: `  Akin to the normal home air-conditioner, vehicles usually contain a similar component known as the cabin Air filter which purifies the air in the passenger cabin and has many other advantages:
