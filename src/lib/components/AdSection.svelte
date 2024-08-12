@@ -1,5 +1,5 @@
 <div
-	class="w-full bg-gray-800 bg-center bg-cover bg-blend-overlay bg-[url('https://unsplash.com/photos/FMbWFDiVRPs/download?force=true&w=640')] max-w-s text-center"
+	class="w-full  bg-center bg-cover bg-no-repeat bg-blend-overlay bg-[url('/jeep1.jpeg')] relative overflow-hidden block z-10 before:content-[''] before:absolute before:inset-0 before:block before:bg-gradient-to-b before:from-[#252b2b] before:to-black before:opacity-75 before:z-[-5] max-w-s text-center"
 >
 	<div class="py-16 px-4 text-white bg-blend-darken">
 		<h5 class="text-xl font-bold">Clearance & Discount</h5>
@@ -8,7 +8,7 @@
 		>
 		<a
 			href="#"
-			class="uppercase block w-fit py-2 px-4 rounded-lg bg-red-600 border-2 border-transparent text-white text-sm mx-auto mt-6 hover:bg-red-400"
+			class="uppercase backdrop-blur-lg block w-fit py-2 px-4 rounded-lg bg-[#ffc917] border-2 border-transparent text-[#252B2B] text-sm mx-auto mt-6 hover:bg-red-400"
 		>
 			shop now
 		</a>

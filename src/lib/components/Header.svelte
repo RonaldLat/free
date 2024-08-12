@@ -9,8 +9,7 @@
 		/>
 	</div>
 
-	<header class="h-24 sm:h-32 flex items-center w-full relative">
-		<div class="container mx-auto px-6 flex items-center justify-between">
+	<header class="h-24 sm:h-32 flex items-center w-full relative"> <div class="container mx-auto px-6 flex items-center justify-between">
 			<div class="uppercase text-gray-50 dark:text-white font-black text-4xl">speedy nucho</div>
 			<div class="flex items-center">
 				<nav

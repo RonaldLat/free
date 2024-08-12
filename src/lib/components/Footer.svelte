@@ -13,7 +13,7 @@
 <div class="bg-black text-gray-300 py-12">
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="lg:text-center">
-			<h2 class="text-base text-red-600 font-semibold tracking-wide uppercase">Location</h2>
+			<h2 class="text-base text-[#ffc917]/80 font-semibold tracking-wide uppercase">Location</h2>
 			<p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-200 sm:text-4xl">
 				Our Store
 			</p>
@@ -25,7 +25,7 @@
 				<div class="flex">
 					<div class="flex-shrink-0">
 						<div
-							class="flex items-center justify-center h-12 w-12 rounded-md bg-red-500 text-white"
+							class="flex items-center justify-center h-12 w-12 rounded-md bg-[#ffc917] text-white"
 						>
 							<!-- Heroicon name: globe-alt -->
 							<Icon icon="material-symbols:location-on" class="text-3xl" />
@@ -43,7 +43,7 @@
 				<div class="flex">
 					<div class="flex-shrink-0">
 						<div
-							class="flex items-center justify-center h-12 w-12 rounded-md bg-red-500 text-white"
+							class="flex items-center justify-center h-12 w-12 rounded-md bg-[#ffc917] text-white"
 						>
 							<!-- Heroicon name: phone -->
 							<Icon icon="material-symbols:phone-enabled-sharp" class="text-3xl" />
@@ -51,7 +51,7 @@
 					</div>
 					<div class="ml-4">
 						<dt class="text-lg leading-6 font-medium font-semibold text-gray-300">Phone</dt>
-						<dd class="mt-2 text-base text-gray-300">
+						<dd class="mt-2 text-base text-gray-300 underline decoration-[#ffc917]/50 underline-offset-4  decoration-1 flex flex-col">
 							<a href="tel:{details.phone_1}">{details.phone_1}</a> <br />
               <a href="tel:{details.phone_2}">
 							{details.phone_2}
@@ -63,7 +63,7 @@
 				<div class="flex">
 					<div class="flex-shrink-0">
 						<div
-							class="flex items-center justify-center h-12 w-12 rounded-md bg-red-500 text-white"
+							class="flex items-center justify-center h-12 w-12 rounded-md bg-[#ffc917] text-white"
 						>
 							<!-- Heroicon name: mail -->
 							<Icon icon="material-symbols:stacked-email-rounded" class="text-3xl" />
@@ -72,7 +72,7 @@
 					<div class="ml-4">
 						<dt class="text-lg leading-6 font-medium font-semibold text-gray-300">Email</dt>
 						<dd class="mt-2 text-base text-gray-300">
-              <a href="mailto:{details.email}">
+              <a href="mailto:{details.email}" class="underline decoration-[#ffc917]/50 underline-offset-4 decoration-1">
 							{details.email}
               </a>
 						</dd>
@@ -82,7 +82,7 @@
 				<div class="flex">
 					<div class="flex-shrink-0">
 						<div
-							class="flex items-center justify-center h-12 w-12 rounded-md bg-red-500 text-white"
+							class="flex items-center justify-center h-12 w-12 rounded-md bg-[#ffc917] text-white"
 						>
 							<!-- Heroicon name: clock -->
 							<Icon icon="material-symbols:nest-clock-farsight-analog" class="text-3xl" />
@@ -105,7 +105,7 @@
 	<p class="text-sm text-gray-100 py-3  ">
 		&copy {new Date().getFullYear()} Speedy Nucho Auto Spares. All Rights Reserved.
 	</p>
-  <ul class="text-red-400 flex gap-4">
+  <ul class="text-[#ffc917] flex gap-4">
   <li><a href="/">Home</a></li>
   <li><a href="/products">Products</a></li>
   </ul>
