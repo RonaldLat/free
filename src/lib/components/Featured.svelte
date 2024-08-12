@@ -50,8 +50,12 @@
   {/each}
   </section>
   <div class="py-4 text-center">
-    <a class="  text-red-600 hover:underline" href="#">
+    <a class="hidden btn text-red-600 hover:underline" href="#">
       View More
     </a>
+		<a
+			href="/lubricants"
+			class=" backdrop-blur-lg block w-fit py-2 px-4 rounded-lg text-[#ffc917] border-2 border-transparent bg-[#000] text-sm mx-auto mt-6 hover:bg-red-400"
+		>View More</a>
   </div>
 </div>
