@@ -7,6 +7,7 @@ export function GET({ url }) {
 	console.log(url.searchParams.get('limit'));
 	const limit = url.searchParams.get('limit');
 	const id = url.searchParams.get('id');
+	const ids = url.searchParams.get('ids');
 	const category = url.searchParams.get('category');
 
 	if (id) {
@@ -38,7 +39,21 @@ export function GET({ url }) {
 		products = productData.slice(0, numberOfProducts);
 	} else {
 		products = productData;
-	}
+	};
+
+  if (ids){
+    // Convert the ids string to an array of numbers
+		const idArray = ids.split(',').map(id => id.trim());
+    console.log('idsArray',idArray)
+    const selectedProducts = productData.filter((product) => idArray.includes(product.id));
+    console.log('selected', selectedProducts)
+    return json(selectedProducts)
+  }else{
+    return {
+      status: 404,
+      body: { message: 'Product not found' }
+    };
+  } 
 
 	return json(products);
 }

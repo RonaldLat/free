@@ -52,7 +52,7 @@
   <div class="py-4 text-center">
 		<a
 			href="/lubricants"
-			class=" backdrop-blur-lg block w-fit py-2 px-4 rounded-lg text-[#ffc917] border-2 border-transparent bg-[#000] text-sm mx-auto mt-6 hover:bg-blend-saturate"
+			class=" backdrop-blur-lg block w-fit py-2 px-4 rounded-lg text-[#ffc917] border-2 border-transparent bg-[#252b2b] text-sm mx-auto mt-6 hover:bg-[#252b2b]/85 transition delay-100"
 		>View More</a>
   </div>
 </div>

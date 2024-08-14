@@ -10,11 +10,11 @@
 	};
 </script>
 
-<div class="bg-black text-gray-300 py-12">
+<div class="bg-black text-neutral-300 py-12">
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="lg:text-center">
 			<h2 class="text-base text-[#ffc917]/80 font-semibold tracking-wide uppercase">Location</h2>
-			<p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-200 sm:text-4xl">
+			<p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-200 sm:text-4xl font-gupter">
 				Our Store
 			</p>
 			<p class="mt-4 max-w-2xl  text-gray-300 lg:mx-auto">Welcome to our auto spare parts website! We're dedicated to providing you with the highest quality auto parts at competitive prices. <br> We're committed to helping you find the right parts for your vehicle.</p>
@@ -28,7 +28,7 @@
 							class="flex items-center justify-center h-12 w-12 rounded-md bg-[#ffc917] text-white"
 						>
 							<!-- Heroicon name: globe-alt -->
-							<Icon icon="material-symbols:location-on" class="text-3xl" />
+							<Icon icon="material-symbols:location-on" class="text-black text-3xl" />
 						</div>
 					</div>
 					<div class="ml-4">
@@ -46,7 +46,7 @@
 							class="flex items-center justify-center h-12 w-12 rounded-md bg-[#ffc917] text-white"
 						>
 							<!-- Heroicon name: phone -->
-							<Icon icon="material-symbols:phone-enabled-sharp" class="text-3xl" />
+							<Icon icon="material-symbols:phone-enabled-sharp" class="text-3xl text-black" />
 						</div>
 					</div>
 					<div class="ml-4">
@@ -66,7 +66,7 @@
 							class="flex items-center justify-center h-12 w-12 rounded-md bg-[#ffc917] text-white"
 						>
 							<!-- Heroicon name: mail -->
-							<Icon icon="material-symbols:stacked-email-rounded" class="text-3xl" />
+							<Icon icon="material-symbols:stacked-email-rounded" class="text-3xl text-black" />
 						</div>
 					</div>
 					<div class="ml-4">
@@ -85,7 +85,7 @@
 							class="flex items-center justify-center h-12 w-12 rounded-md bg-[#ffc917] text-white"
 						>
 							<!-- Heroicon name: clock -->
-							<Icon icon="material-symbols:nest-clock-farsight-analog" class="text-3xl" />
+							<Icon icon="material-symbols:nest-clock-farsight-analog" class="text-3xl text-black" />
 						</div>
 					</div>
 					<div class="ml-4">
