@@ -91,8 +91,7 @@
 					<div class="ml-4">
 						<dt class="text-lg leading-6 font-medium font-semibold text-gray-300">Store Hours</dt>
 						<dd class="mt-2 text-base text-gray-300">
-							Monday - Saturday: 7am to 6pm<br />
-							Saturday: 10am to 6pm<br />
+							Monday - Saturday: 8am to 6pm<br />
 						</dd>
 					</div>
 				</div>
