@@ -104,7 +104,7 @@
 	<p class="text-sm text-gray-100 py-3  ">
 		&copy {new Date().getFullYear()} Speedy Nucho Auto Spares. All Rights Reserved.
 	</p>
-	<p>by <a href="https://ronaldotieno.netlify.app">Ronald Otieno</a></p>
+	<p class="text-sm text-gray-100 pb-3" >by <a href="https://ronaldotieno.netlify.app">Ronald Otieno</a></p>
   <ul class="text-[#ffc917] flex gap-4">
   <li><a href="/">Home</a></li>
   <li><a href="/products">Products</a></li>
