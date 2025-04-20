@@ -1,7 +1,9 @@
 <script>
 	import ProductCard from '$lib/components/ProductCard.svelte';
+	import InquiryButton from '$lib/components/InquiryButton.svelte';
 
 	export let data;
+	export let image, name, id, category;
 	let { products } = data;
 
 	console.log(products);
@@ -15,7 +17,12 @@
 	class="w-full mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-2 mt-10 mb-5 hidden"
 >
 	{#each products as product}
-		<ProductCard image="/files/{product.imageUrl}" name={product.name} id={product.id} category={product.category}/>
+		<ProductCard
+			image="/files/{product.imageUrl}"
+			name={product.name}
+			id={product.id}
+			category={product.category}
+		/>
 	{/each}
 </section>
 
@@ -25,34 +32,42 @@
 -->
 
 <div class="bg-[#d5d5d8]">
-  <div class="py-8 px-4 md:px-6">
-    <h2 class="font-gupter text-2xl font-bold md:text-3xl capitalize">Featured products</h2>
-  </div>
-  <section class="grid grid-cols-1 gap-6 p-4 md:grid-cols-3 md:p-6">
-	{#each products as product}
-      <div class="relative overflow-hidden transition-transform duration-300 ease-in-out rounded-lg shadow-lg group hover:shadow-xl hover:-translate-y-2">
-        <a class="absolute inset-0 z-10" href="/products/{product.id}">
-          <span class="sr-only">View</span>
-        </a>
-        <img
-          src="/files/{product.imageUrl}"
-          alt="Auto Part 2"
-          width="500"
-          height="400"
-          class="object-cntain w-full h-64"
-          style="aspect-ratio: 500 / 400; object-fit: cover;"
-        />
-        <div class="p-4 bg-black h-full text-white">
-          <span class="font-gupter text-sm font-medium capitalize text-gray-300">{product.category}</span>
-          <h3 class="text-lg font-bold uppercase text-gray-100">{product.name}</h3>
-        </div>
-      </div>
-  {/each}
-  </section>
-  <div class="py-4 text-center">
+	<div class="py-8 px-4 md:px-6">
+		<h2 class="font-gupter text-2xl font-bold md:text-3xl capitalize">Featured products</h2>
+	</div>
+	<section class="grid grid-cols-1 gap-6 p-4 md:grid-cols-3 md:p-6">
+		{#each products as product}
+			<div
+				class="relative overflow-hidden transition-transform duration-300 ease-in-out rounded-lg shadow-lg group hover:shadow-xl hover:-translate-y-2"
+			>
+				<a class="absolute inset-0 z-10" href="/products/{product.id}">
+					<span class="sr-only">View</span>
+				</a>
+				<img
+					src="/files/{product.imageUrl}"
+					alt="Auto Part 2"
+					width="500"
+					height="400"
+					class="object-cntain w-full h-64"
+					style="aspect-ratio: 500 / 400; object-fit: cover;"
+				/>
+				<div class="p-4 bg-black h-full text-white">
+					<span class="font-gupter text-sm font-medium capitalize text-gray-300"
+						>{product.category}</span
+					>
+					<h3 class="text-lg font-bold uppercase text-gray-100">{product.name}</h3>
+					<div class="my-2">
+						<InquiryButton productName={name} productId={id} />
+					</div>
+				</div>
+			</div>
+		{/each}
+	</section>
+	<div class="py-4 text-center">
 		<a
 			href="/lubricants"
 			class=" backdrop-blur-lg block w-fit py-2 px-4 rounded-lg text-[#ffc917] border-2 border-transparent bg-[#252b2b] text-sm mx-auto mt-6 hover:bg-[#252b2b]/85 transition delay-100"
-		>View More</a>
-  </div>
+			>View More</a
+		>
+	</div>
 </div>

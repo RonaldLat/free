@@ -16,12 +16,13 @@
 		<div class="px-4 py-3 w-72">
 			<span class="text-gray-400 mr-3 uppercase text-xs">{category}</span>
 			<p class="text-lg font-gupter font-bold text-red-600 truncate block uppercase">{name}</p>
-			<div class="flex items-center">
+			<div class="flex items-center justify-between">
 				<p class=" hidden text-lg font-semibold text-black cursor-auto my-3">Ksh.</p>
 				<del>
 					<p class="hidden text-sm text-gray-600 cursor-auto ml-2">Ksh.</p>
 				</del>
-				<a class="underline underline-offset-2" href="/products/{id}">Description</a>
+				<a class="underline underline-offset-2 mr-auto" href="/products/{id}">Description</a>
+				<InquiryButton productName={name} productId={id} />
 				<div class="ml-auto hidden">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -43,5 +44,4 @@
 			</div>
 		</div>
 	</div>
-	<InquiryButton productName={name} productImage={image} />
 </div>
