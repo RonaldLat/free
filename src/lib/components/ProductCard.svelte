@@ -1,4 +1,6 @@
 <script>
+	import InquiryButton from '$lib/components/InquiryButton.svelte';
+
 	export let image, name, id, category;
 </script>
 
@@ -41,4 +43,5 @@
 			</div>
 		</div>
 	</div>
+	<InquiryButton productName={name} productImage={image} />
 </div>
