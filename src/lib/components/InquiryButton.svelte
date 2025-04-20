@@ -2,11 +2,12 @@
 	export let productName;
 	export let productImage;
 
-	productImage = 'http://localhost:5173' + productImage;
+	// productImage = 'https://localhost:5173' + productImage;
+	productImage = 'https://speedynuchoauto.co.ke' + productImage;
 	console.log('inqiry name:', productName, productImage);
 
 	function sendWhatsApp(productName) {
-		const phoneNumber = '+25412973489';
+		const phoneNumber = '+254712973489';
 		const message = encodeURIComponent(
 			`Hello! I'm interested in learning more about the ${productName}. ${('localhost:5173/', productImage)}`
 		);
