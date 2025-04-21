@@ -28,7 +28,7 @@
 		{
 			name: 'Suspensions',
 			icon: 'material-symbols:local-car-wash-outline-rounded',
-			image: 'image15.png',
+			image: 'bluebox.jpeg',
 			categoryUrl: 'suspension-parts',
 			info: 'Systems and components that enhance vehicle stability, handling, and ride comfort.'
 		}

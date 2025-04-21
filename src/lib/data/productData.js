@@ -92,7 +92,8 @@ A fresh set of OEM Mazda spark plugs will improve your engine performance and fu
 		description: `The starter in a Nissan X-Trail is a crucial component responsible for initiating the engine’s combustion process. When you turn the ignition key, the starter motor engages with the flywheel, allowing the engine to crank and start running. The starter motor is typically located near the engine, close to the transmission bell housing.
 To access it, you may need to remove certain components, such as the air intake duct or other parts obstructing direct access.
 Refer to your vehicle’s service manual or consult a professional mechanic for precise instructions on locating and accessing the starter.
-`	},
+`
+	},
 	{
 		id: '10',
 		price: '',
@@ -108,7 +109,7 @@ Refer to your vehicle’s service manual or consult a professional mechanic for 
 • Eliminates exhaust gas odors and other unpleasant odors.
 • Prevents the accumulation of harmful substances which corrode the parts of the air conditioner.
   `
-  },
+	},
 	{
 		id: '11',
 		price: '',
@@ -118,7 +119,7 @@ Refer to your vehicle’s service manual or consult a professional mechanic for 
 		description: ` An oil filter is a mechanical device designed to remove contaminants, dirt, and unburned fuel from circulating engine oil, transmission oil, lubricating oil, or hydraulic oil. Its primary purpose is to ensure that only clean, filtered oil reaches the engine, thereby protecting the engine from wear and maintaining optimal performance. Oil filters are commonly used in internal-combustion engines for motor vehicles (both on- and off-road), powered aircraft, railway locomotives, ships, boats, and static such as generators and pumps.
 
   `
-  },
+	},
 	{
 		id: '12',
 		price: '',
@@ -133,7 +134,7 @@ Excellent structural stability.
 Lead, chlorine, and nitrite-free formulation.
 Mobilgrease MP 3 is recommended for lubricating automotive chassis components, wheel bearings, clutch bearings, universal joints, and ball joints in steering and suspension systems of passenger cars, trucks, farm tractors, and other mobile equipment operating under moderate conditions. Its recommended operating temperature range is from -20°C to 120°C1.
   `
-  },
+	},
 	{
 		id: '13',
 		price: '',
@@ -143,7 +144,7 @@ Mobilgrease MP 3 is recommended for lubricating automotive chassis components, w
 		description: ` Maxit engine oil is a long multi-grade engine oil specially designed for both natural aspirated and turbocharged diesel engines. It provides optimal lubrication and protection to keep your engine running smoothly. If you’re interested, you can find Maxit Oil available in either 5L or 20L containers.
 
   `
-  },
+	},
 	{
 		id: '14',
 		price: '',
@@ -160,7 +161,7 @@ Soluble in oil and easily emulsified.
 Improves the wetting characteristics of fats and oils2.
 These additives play a crucial role in maintaining machinery efficiency and extending the lifespan of metalworking equipment. Whether it’s cutting, grinding, or forming, Maxlube® additives contribute to smoother operations and better results.
   `
-  },
+	},
 	{
 		id: '15',
 		price: '',
@@ -170,7 +171,7 @@ These additives play a crucial role in maintaining machinery efficiency and exte
 		description: `
 All front-wheel drive cars have Constant Velocity joints or CV joints on both ends of the drive shafts (half shafts). Inner CV joints connect the drive shafts to the transmission, while the outer CV joints connect the drive shafts to the wheels. The CV joints are needed to transfer the torque from the transmission to the drive wheels at a constant speed, while accommodating the up-and-down motion of the suspension. In front-wheel drive cars, CV joints deliver the torque to the front wheels during turns.
     `
-  },
+	},
 	{
 		id: '16',
 		price: '',
@@ -185,7 +186,7 @@ Bearings have two key functions:
 They transfer motion, i.e. they support and guide components which turn relative to one another
 They transmit forces
     `
-  },
+	},
 	{
 		id: '17',
 		price: '',
@@ -199,7 +200,19 @@ Your vehicle’s upper control arm also helps the front wheels to turn, making t
 
 At the end of each control arm, a ball joint connects it to the wheel of your car. The other side connects to the frame of your vehicle through bolts that go through bushings. These are your control arm bushings.
     `
-  },
+	},
+	{
+		id: '18',
+		price: '',
+		name: 'STABILIZER LINKS',
+		category: 'suspensions',
+		imageUrl: 'image18.jpeg',
+		description: `
+Stabilizer links A.KA.sway bar links, are crucial components of your vehicle’s suspension system. They connect the sway bar (or stabilizer bar) to the suspension control arms, helping to maintain stability and control during turns and maneuvers.
+Signs such as rattling sounds especially when driving over bumpy roads or uneven surfaces, uneven tire wear and vibrations in your steering wheel especially during turns are signs that your stabilizer links could be worn out and needs replacement.
+
+    `
+	}
 	// Add more products as needed
 ];
 
