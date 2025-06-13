@@ -218,7 +218,7 @@ Signs such as rattling sounds especially when driving over bumpy roads or uneven
 		price: '',
 		name: 'WATER SEPARATOR',
 		category: 'service-parts',
-		imageUrl: 'image18.jpeg',
+		imageUrl: 'image19.jpeg',
 		description: `
 An oil water separator plays a crucial role in compressed air systems that use oil as a lubricant. During the process of generating compressed air, condensate (water vapor) is produced. This moisture contains traces of oil and other contaminants. To protect the environment and your equipment, condensate must be treated. After the oil is filtered out, it needs to be separated before it can be safely disposed of, this is where the oil water separator comes in. This equipment separates water and oil within condensate to prevent oil from ending up in the environment.    `
 	}
