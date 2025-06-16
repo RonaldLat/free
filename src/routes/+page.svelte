@@ -5,12 +5,13 @@
 	import Featured from '$lib/components/Featured.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
+	import Map from '$lib/components/Map.svelte';
 
-  export let data;
-
+	export let data;
 </script>
 
 <Header />
 <DealersIn />
-<Featured {data}/>
+<Featured {data} />
 <AdSection />
+<Map />
