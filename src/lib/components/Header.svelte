@@ -9,7 +9,8 @@
 		/>
 	</div>
 
-	<header class="h-24 sm:h-32 flex items-center w-full relative"> <div class="container mx-auto px-6 flex items-center justify-between">
+	<header class="h-24 sm:h-32 flex items-center w-full relative">
+		<div class="container mx-auto px-6 flex items-center justify-between">
 			<div class="uppercase text-gray-50 dark:text-white font-black text-4xl">speedy nucho</div>
 			<div class="flex items-center">
 				<nav
@@ -47,7 +48,7 @@
 						href="/products"
 						class="uppercase cursor-pointer py-2 px-4 rounded-lg bg-red-600 border-2 border-transparent text-white text-md mr-4 hover:bg-red-400"
 					>
-						shop now
+						shop on whatsapp
 					</a>
 					<a
 						href="tel:0743298722"
@@ -69,7 +70,7 @@
 <section
 	class="w-full h-[65vh] py-12 md:py-24 lg:py-32 bg-[url('/autoparts1.jpeg')] bg-cover bg-no-repeat bg-gray-800 bg-center text-gray-500 bg-blend-overlay"
 >
-	<div class="container px-4 md:px-6">
+	<div class="container px-4 md:px-6 mx-auto">
 		<div class="flex flex-col items-center justify-center space-y-6 text-center">
 			<div class="space-y-2">
 				<h1
@@ -83,11 +84,11 @@
 			</div>
 			<div class="flex flex-col gap-2 min-[400px]:flex-row">
 				<a
-					class="inline-flex h-10 items-center justify-center rounded-md bg-[#ffc917] bg-opacity-90 px-8 text-sm font-medium text-[#050505] shadow transition-colors hover:bg-[#ffc917]/70 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 backdrop-blur-sm"
+					class="inline-flex h-10 items-center justify-center rounded-md bg-[#ffc917] bg-opacity-90 px-8 text-sm font-medium text-[#050505] shadow transition-colors hover:bg-[#ffc917]/70 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 backdrop-blur-sm capitalize"
 					href="/products"
 					rel="ugc"
 				>
-					Shop Now
+					shop on whatsapp
 				</a>
 				<a
 					class="inline-flex h-10 items-center justify-center rounded-md border border-2 border-[#ffc917] text-gray-200 border-input px-8 text-sm font-medium shadow-sm transition-colors hover:bg-[#e7e5df]/20 hover:text-[#ffc917] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 backdrop-blur-md"
