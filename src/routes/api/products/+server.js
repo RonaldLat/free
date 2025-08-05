@@ -1,10 +1,8 @@
-import productData from '$lib/data/productData.js'; // Adjust the path as needed
+import productData from '$lib/data/productData.js';
+import { json, error } from '@sveltejs/kit'; // Import the 'error' helper
 
-import { json } from '@sveltejs/kit';
 /** @type {import('./$types').RequestHandler} */
 export function GET({ url }) {
-	let products;
-	console.log(url.searchParams.get('limit'));
 	const limit = url.searchParams.get('limit');
 	const id = url.searchParams.get('id');
 	const ids = url.searchParams.get('ids');
@@ -15,45 +13,39 @@ export function GET({ url }) {
 		if (product) {
 			return json(product);
 		} else {
-			return {
-				status: 404,
-				body: { message: 'Product not found' }
-			};
+			// Use the SvelteKit 'error' helper for 404
+			throw error(404, 'Product not found');
 		}
 	}
+
 	if (category) {
 		const products = productData.filter((product) => product.category === category);
 		if (products) {
 			return json(products);
 		} else {
-			return {
-				status: 404,
-				body: { message: 'Product not found' }
-			};
+			// Use the SvelteKit 'error' helper for 404
+			throw error(404, 'Product not found');
 		}
 	}
 
+	if (ids) {
+		const idArray = ids.split(',').map((id) => id.trim());
+		const selectedProducts = productData.filter((product) => idArray.includes(product.id));
+
+		// This handles the case where no products are found for the given IDs
+		if (selectedProducts.length > 0) {
+			return json(selectedProducts);
+		} else {
+			throw error(404, 'Products not found for the given IDs');
+		}
+	}
 
 	if (limit) {
 		const numberOfProducts = parseInt(limit, 10);
-		products = productData.slice(0, numberOfProducts);
-	} else {
-		products = productData;
-	};
+		const products = productData.slice(0, numberOfProducts);
+		return json(products);
+	}
 
-  if (ids){
-    // Convert the ids string to an array of numbers
-		const idArray = ids.split(',').map(id => id.trim());
-    console.log('idsArray',idArray)
-    const selectedProducts = productData.filter((product) => idArray.includes(product.id));
-    console.log('selected', selectedProducts)
-    return json(selectedProducts)
-  }else{
-    return {
-      status: 404,
-      body: { message: 'Product not found' }
-    };
-  } 
-
-	return json(products);
+	// Default case: no parameters provided, return all products
+	return json(productData);
 }

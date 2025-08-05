@@ -1,11 +1,14 @@
 <script>
 	import Footer from '$lib/components/Footer.svelte';
-import '../app.css';
-  import Icon from '@iconify/svelte';
+	import '../app.css';
+	import Icon from '@iconify/svelte';
 </script>
 
-<main class="font-roboto bg-black relative max-w-full overflow-hidden">
-<Icon icon="material-symbols:menu-rounded" class="hidden text-5xl text-gray-200 fixed top-2 right-2 md:hidden"/>
+<main class="font-roboto bg-black relative max-w-full min-h-screen overflow-hidden">
+	<Icon
+		icon="material-symbols:menu-rounded"
+		class="hidden text-5xl text-gray-200 fixed top-2 right-2 md:hidden"
+	/>
 	<slot />
 </main>
-<Footer/>
+<Footer />
