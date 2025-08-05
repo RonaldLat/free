@@ -1,9 +1,11 @@
 <script>
 	import Footer from '$lib/components/Footer.svelte';
+	import Nav from '$lib/components/Nav.svelte';
 	import '../app.css';
 	import Icon from '@iconify/svelte';
 </script>
 
+<Nav />
 <main class="font-roboto bg-black relative max-w-full min-h-screen overflow-hidden">
 	<Icon
 		icon="material-symbols:menu-rounded"
@@ -12,3 +14,9 @@
 	<slot />
 </main>
 <Footer />
+
+<style>
+	:global(html) {
+		scroll-behavior: smooth;
+	}
+</style>

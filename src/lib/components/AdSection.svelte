@@ -7,7 +7,7 @@
 			>Top quality, great selection and expert advice you can trust</span
 		>
 		<a
-			href="#"
+			href="/products"
 			class="uppercase backdrop-blur-lg block w-fit py-2 px-4 rounded-lg bg-[#ffc917] border-2 border-transparent text-[#252B2B] text-sm mx-auto mt-6 hover:bg-[#ffc917]/70"
 		>
 			shop on whatsapp
