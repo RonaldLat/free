@@ -4,6 +4,7 @@
 	import DealersIn from '$lib/components/DealersIn.svelte';
 	import Featured from '$lib/components/Featured.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import GoogleTestimonials from '$lib/components/GoogleTestimonials.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import Map from '$lib/components/Map.svelte';
 
@@ -14,4 +15,5 @@
 <DealersIn />
 <Featured {data} />
 <AdSection />
+<GoogleTestimonials />
 <Map />
