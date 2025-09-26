@@ -7,6 +7,7 @@
 	import GoogleTestimonials from '$lib/components/GoogleTestimonials.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import Map from '$lib/components/Map.svelte';
+	import Partners from '$lib/components/Partners.svelte';
 
 	export let data;
 </script>
@@ -16,4 +17,5 @@
 <Featured {data} />
 <AdSection />
 <GoogleTestimonials />
+<Partners />
 <Map />

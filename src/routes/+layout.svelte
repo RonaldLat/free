@@ -5,7 +5,7 @@
 	import Icon from '@iconify/svelte';
 </script>
 
-<main class="font-roboto bg-black relative max-w-full min-h-screen overflow-hidden">
+<main class="font-roboto  relative max-w-full min-h-screen overflow-hidden">
 	<Nav />
 	<Icon
 		icon="material-symbols:menu-rounded"
