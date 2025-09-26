@@ -31,6 +31,13 @@
 			image: 'bluebox.jpeg',
 			categoryUrl: 'suspension-parts',
 			info: 'Systems and components that enhance vehicle stability, handling, and ride comfort.'
+		},
+		{
+			name: 'Brake Parts',
+			icon: 'material-symbols:local-car-wash-outline-rounded',
+			image: 'braking.png',
+			categoryUrl: 'brake-parts',
+			info: ' Stop Worrying, Start Braking With Confidence. Keep Calm and Brake on With Our Reliable Braking Parts'
 		}
 	];
 </script>

@@ -213,7 +213,7 @@ Signs such as rattling sounds especially when driving over bumpy roads or uneven
 
     `
 	},
-		{
+	{
 		id: '19',
 		price: '',
 		name: 'WATER SEPARATOR',
@@ -221,6 +221,35 @@ Signs such as rattling sounds especially when driving over bumpy roads or uneven
 		imageUrl: 'image19.jpeg',
 		description: `
 An oil water separator plays a crucial role in compressed air systems that use oil as a lubricant. During the process of generating compressed air, condensate (water vapor) is produced. This moisture contains traces of oil and other contaminants. To protect the environment and your equipment, condensate must be treated. After the oil is filtered out, it needs to be separated before it can be safely disposed of, this is where the oil water separator comes in. This equipment separates water and oil within condensate to prevent oil from ending up in the environment.    `
+	},
+
+	{
+		id: '20',
+		price: '',
+		name: 'BRAKE PADS',
+		category: 'brake-parts',
+		imageUrl: 'image20.png',
+		description: `
+ASIMCO, a trusted brake pad manufacturer, delivers high-quality auto brake pads designed with advanced technology for reliable performance.
+ With proven research and development done and documented,safety and efficacy are guaranteed.Asimco brake pads offer excellent brake pedal feel,steady friction value under elevated temperatures with low noise emissions.`
+	},
+	{
+		id: '21',
+		price: '',
+		name: 'BRAKE SHOES',
+		category: 'brake-parts',
+		imageUrl: 'image21.png',
+		description: `
+Brake shoes, also known as brake linings serve a similar role as brake pads though they are not the same thing.With a crescent-shaped appearance,they have a rough friction surface on one side.When the brake pedal is depressed,the brake linings which are usually located within the brake drums are thrust outwards pressing the brake drum’s interior thereby slowing the wheel.`
+	},
+	{
+		id: '22',
+		price: '',
+		name: 'CLUTCH PLATES',
+		category: 'brake-parts',
+		imageUrl: 'image22.png',
+		description: `
+Also known as the friction disc,it is a flat,circular component made up of metal and covered with friction material on both sides.Sandwiched between the flywheel(connected to the engine) and the pressure plate,when engaged,the pressure plate presses the clutch plate tightly against the flywheel and vice-versa.Whenever there is a difficulty changing gears,a burning smell,vibration or chattering when releasing the clutch,then those are important indicators to change your worn out clutch plate.A clutch plate has a lifespan between 30,000 to 100,000 Km depending on one’s driving style and conditions.`
 	}
 	// Add more products as needed
 ];
