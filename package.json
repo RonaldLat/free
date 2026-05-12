@@ -32,6 +32,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@google/genai": "^2.1.0",
 		"@splidejs/svelte-splide": "^0.2.9"
 	}
 }
