@@ -8,6 +8,9 @@
 	import Header from '$lib/components/Header.svelte';
 	import Map from '$lib/components/Map.svelte';
 	import Partners from '$lib/components/Partners.svelte';
+	
+	// Import the updated Chat widget
+	import Chat from '$lib/components/Chat.svelte';
 
 	export let data;
 </script>
@@ -19,3 +22,5 @@
 <GoogleTestimonials />
 <Partners />
 <Map />
+
+<Chat />
