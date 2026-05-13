@@ -25,7 +25,7 @@ const productData = [
 		name: 'suzuki cvt fluid green 2 (ecstar)',
 		category: 'lubricants',
 		imageUrl: 'product3.png',
-		description: `With rising global temperatures and immense efforts being poured by the governments and global corporations to combat climate change,Suzuki came up with a green “darling” which offers all benefits provided by the normal CVTs.In addition to being  eco-friendly,this product also has certain, unique features such as;
+		description: `With rising global temperatures and immense efforts being poured by the governments and global corporations to combat climate change,Suzuki came up with a green “darling” which offers all benefits provided by the normal CVTs.In addition to being eco-friendly,this product also has certain, unique features such as;
 
 -Excellent thermal and oxidative stabilityExcellent low temperature fluidity
 -Smooth speed changing due to delicately balanced friction coefficient between belt and pulley
@@ -58,6 +58,7 @@ Provides reserve protection during heavy use and abuse
 		id: '6',
 		price: '',
 		name: 'nissan cvt fluid ns-2',
+		category: 'lubricants',
 		imageUrl: 'product6.png',
 		description: `Nissan recommends NS-2 for use in most CVT automatic transmissions.
 Nissan NS-2 Transmission Fluid uses a unique formulation of high quality special friction modifiers and other additives to ensure stable, precise operation over long periods of use.`
@@ -251,7 +252,6 @@ Brake shoes, also known as brake linings serve a similar role as brake pads thou
 		description: `
 Also known as the friction disc,it is a flat,circular component made up of metal and covered with friction material on both sides.Sandwiched between the flywheel(connected to the engine) and the pressure plate,when engaged,the pressure plate presses the clutch plate tightly against the flywheel and vice-versa.Whenever there is a difficulty changing gears,a burning smell,vibration or chattering when releasing the clutch,then those are important indicators to change your worn out clutch plate.A clutch plate has a lifespan between 30,000 to 100,000 Km depending on one’s driving style and conditions.`
 	}
-	// Add more products as needed
 ];
 
 export default productData;

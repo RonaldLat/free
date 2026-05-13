@@ -9,12 +9,5 @@ export const businessPolicy = {
 	
 	workshopServices: "Beyond supplying parts, our fully equipped workshop handles professional installation, minor servicing (oil change in 30-45 mins), brake pad replacement, suspension overhauls, and computer diagnostic scanning. Labor costs are highly competitive and are quoted accurately on-site based on the vehicle type.",
 
-	symptomMappers: `
-	Use these symptoms to guide customers to the right inventory items:
-	- Loud clicking/clacking when turning the steering wheel sharply -> Point them to CV JOINTS (id: 15).
-	- High-pitched squealing or grinding when braking -> Point them to BRAKE PADS (id: 20) or BRAKE SHOES (id: 21).
-	- Engine misfiring, rough idling, shaking, or sudden drop in fuel efficiency -> Point them to SPARK PLUGS (id: 7 or 8).
-	- Steering wheel vibration, rattling over speed bumps or rough estate roads -> Point them to STABILIZER LINKS (id: 18) or ARM BUSHES (id: 17).
-	- Vehicle pulling to one side or a loose steering feel -> Recommend a suspension checkup focusing on BEARINGS (id: 16) and control arms.
-	`
+	symptomMappers: "Guide customers to inventory items using these symptoms: 1. Loud clicking/clacking when turning steering sharply -> CV JOINTS (id: 15). 2. High-pitched squealing or grinding when braking -> BRAKE PADS (id: 20) or BRAKE SHOES (id: 21). 3. Engine misfiring, rough idling, shaking, or drop in fuel efficiency -> SPARK PLUGS (id: 7 or 8). 4. Steering wheel vibration or rattling over speed bumps -> STABILIZER LINKS (id: 18) or ARM BUSHES (id: 17). 5. Vehicle pulling to one side or loose steering feel -> suspension checkup focusing on BEARINGS (id: 16)."
 };
