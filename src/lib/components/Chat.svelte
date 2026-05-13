@@ -55,13 +55,11 @@
 		}, speed);
 	}
 
-	// Enhanced safe markdown link handler supporting complete query strings
 	function parseMarkdown(text) {
 		if (!text) return '';
 		let html = text
 			.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
 			.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-			// Matches both standard store links and long URL-encoded WhatsApp api links perfectly
 			.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
 		return html;
 	}
@@ -93,7 +91,6 @@
 
 			const data = await res.json();
 			
-			// Catch rate limit blocks (status 429 handled implicitly via missing data.reply) or general responses
 			if (data.reply) {
 				const newMsgIndex = messages.length;
 				messages = [...messages, { role: 'assistant', text: '' }];
@@ -117,22 +114,22 @@
 	}
 </script>
 
-<div class="fixed bottom-6 right-6 z-50 font-sans flex flex-col items-end">
+<div class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 font-sans flex flex-col items-end">
 	
 	{#if isOpen}
-		<div class="w-80 sm:w-96 h-[450px] bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col overflow-hidden mb-4 transition-all duration-200 ease-in-out">
+		<div class="w-[calc(100vw-2rem)] sm:w-96 h-[400px] sm:h-[450px] max-h-[75vh] bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col overflow-hidden mb-4 transition-all duration-200 ease-in-out">
 			
 			<div class="bg-blue-600 text-white px-4 py-3 flex justify-between items-center shadow-md">
 				<div class="flex items-center gap-2">
 					<div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-					<span class="font-semibold tracking-wide">Speedynucho Assistant</span>
+					<span class="font-semibold tracking-wide text-sm sm:text-base">Speedynucho Assistant</span>
 				</div>
-				<button on:click={toggleChat} class="text-white hover:text-gray-200 text-xl font-bold focus:outline-none">
-					&times;
+				<button on:click={toggleChat} class="text-white hover:text-gray-200 p-1 rounded-lg transition focus:outline-none flex items-center justify-center">
+					<Icon icon="mdi:close" class="w-5 h-5" />
 				</button>
 			</div>
 
-			<div bind:this={chatWindow} class="flex-1 overflow-y-auto p-4 bg-gray-50 flex flex-col gap-3">
+			<div bind:this={chatWindow} class="flex-1 overflow-y-auto p-3 sm:p-4 bg-gray-50 flex flex-col gap-3">
 				{#each messages as msg}
 					<div class="max-w-[85%] p-3 rounded-2xl text-sm leading-relaxed shadow-sm whitespace-pre-wrap chat-bubble
 						{msg.role === 'user' 
@@ -151,14 +148,14 @@
 			</div>
 
 			{#if messages.length === 1 && !isLoading}
-				<div class="px-4 py-2 bg-gray-50 flex flex-wrap gap-2 border-t border-gray-100">
+				<div class="px-3 py-2 bg-gray-50 flex flex-wrap gap-1.5 border-t border-gray-100 max-h-[110px] overflow-y-auto">
 					{#each quickReplies as reply}
 						<button 
 							type="button"
 							on:click={() => handleQuickReply(reply.text)}
-							class="inline-flex items-center gap-1.5 text-xs bg-white text-gray-600 border border-gray-200 px-2.5 py-1.5 rounded-full hover:border-blue-500 hover:text-blue-600 transition shadow-sm text-left"
+							class="inline-flex items-center gap-1 text-[11px] sm:text-xs bg-white text-gray-600 border border-gray-200 px-2.5 py-1 rounded-full hover:border-blue-500 hover:text-blue-600 transition shadow-sm text-left"
 						>
-							<Icon icon={reply.icon} class="w-4 h-4 text-gray-500" />
+							<Icon icon={reply.icon} class="w-3.5 h-3.5 text-gray-500" />
 							<span>{reply.label}</span>
 						</button>
 					{/each}
@@ -169,16 +166,16 @@
 				<input 
 					type="text" 
 					bind:value={inputMessage} 
-					placeholder="Ask about servicing, delivery, timing..." 
+					placeholder="Ask about parts, delivery, timing..." 
 					disabled={isLoading}
 					class="flex-1 px-3 py-2 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-blue-500 disabled:bg-gray-100"
 				/>
 				<button 
 					type="submit" 
 					disabled={isLoading}
-					class="bg-blue-600 text-white px-4 py-2 rounded-xl text-sm font-medium hover:bg-blue-700 transition disabled:bg-gray-400"
+					class="bg-blue-600 text-white px-3 sm:px-4 py-2 rounded-xl text-sm font-medium hover:bg-blue-700 transition flex items-center justify-center disabled:bg-gray-400"
 				>
-					Send
+					<Icon icon="mdi:send" class="w-4 h-4" />
 				</button>
 			</form>
 		</div>
@@ -186,16 +183,12 @@
 
 	<button 
 		on:click={toggleChat} 
-		class="w-14 h-14 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-xl hover:bg-blue-700 hover:scale-105 transition-all duration-200 focus:outline-none"
+		class="w-12 h-12 sm:w-14 h-14 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-xl hover:bg-blue-700 hover:scale-105 transition-all duration-200 focus:outline-none"
 	>
 		{#if isOpen}
-			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
-				<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-			</svg>
+			<Icon icon="mdi:chevron-down" class="w-6 h-6 sm:w-7 sm:h-7" />
 		{:else}
-			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
-				<path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a.598.598 0 01-.655-.005.598.598 0 01-.207-.58a9.054 9.054 0 01.39-2.54C3.835 16.507 3 14.349 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
-			</svg>
+			<Icon icon="mdi:comment-text-outline" class="w-5 h-5 sm:w-6 sm:h-6" />
 		{/if}
 	</button>
 
@@ -205,7 +198,6 @@
 	.fixed { position: fixed; }
 	.z-50 { z-index: 50; }
 	
-	/* Style standard product and business links */
 	:global(.chat-bubble a) {
 		color: #1e40af;
 		text-decoration: underline;
@@ -216,7 +208,6 @@
 		text-decoration: underline;
 	}
 	
-	/* Special styling for dynamic WhatsApp call-to-action links inside the chat box */
 	:global(.chat-bubble a[href*="wa.me"]) {
 		display: inline-flex;
 		align-items: center;
