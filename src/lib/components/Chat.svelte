@@ -1,5 +1,8 @@
 <script>
 	import Icon from '@iconify/svelte';
+	// Import Svelte's native transition wizardry
+	import { scale } from 'svelte/transition';
+	import { quintOut } from 'svelte/easing';
 	
 	let isOpen = false;
 	let inputMessage = '';
@@ -117,7 +120,10 @@
 <div class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 font-sans flex flex-col items-end">
 	
 	{#if isOpen}
-		<div class="w-[calc(100vw-2rem)] sm:w-96 h-[400px] sm:h-[450px] max-h-[75vh] bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col overflow-hidden mb-4 transition-all duration-200 ease-in-out">
+		<div 
+			transition:scale={{ duration: 250, easing: quintOut, start: 0.92, opacity: 0 }}
+			class="w-[calc(100vw-2rem)] sm:w-96 h-[400px] sm:h-[450px] max-h-[75vh] bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col overflow-hidden mb-4 origin-bottom-right"
+		>
 			
 			<div class="bg-blue-600 text-white px-4 py-3 flex justify-between items-center shadow-md">
 				<div class="flex items-center gap-2">
@@ -185,11 +191,13 @@
 		on:click={toggleChat} 
 		class="w-12 h-12 sm:w-14 h-14 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-xl hover:bg-blue-700 hover:scale-105 transition-all duration-200 focus:outline-none"
 	>
-		{#if isOpen}
-			<Icon icon="mdi:chevron-down" class="w-6 h-6 sm:w-7 sm:h-7" />
-		{:else}
-			<Icon icon="mdi:comment-text-outline" class="w-5 h-5 sm:w-6 sm:h-6" />
-		{/if}
+		<div class="flex items-center justify-center transition-transform duration-300 {isOpen ? 'rotate-180' : 'rotate-0'}">
+			{#if isOpen}
+				<Icon icon="mdi:chevron-down" class="w-6 h-6 sm:w-7 sm:h-7" />
+			{:else}
+				<Icon icon="mdi:comment-text-outline" class="w-5 h-5 sm:w-6 sm:h-6" />
+			{/if}
+		</div>
 	</button>
 
 </div>
