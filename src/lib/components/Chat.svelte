@@ -1,5 +1,4 @@
 <script>
-	// Import Iconify for Svelte
 	import Icon from '@iconify/svelte';
 	
 	let isOpen = false;
@@ -10,7 +9,6 @@
 	let isLoading = false;
 	let chatWindow;
 
-	// 1. QUICK REPLIES DATA SET (Using Iconify string names instead of raw emojis)
 	const quickReplies = [
 		{ 
 			icon: "mdi:map-marker-outline", 
@@ -34,13 +32,11 @@
 		}
 	];
 
-	// Helper to handle quick reply clicks
 	function handleQuickReply(text) {
 		inputMessage = text;
 		sendMessage();
 	}
 
-	// 2. TYPEWRITER EFFECT UTILITY
 	function typeWriter(fullText, messageIndex, speed = 15) {
 		let currentText = '';
 		let charIndex = 0;
@@ -59,12 +55,14 @@
 		}, speed);
 	}
 
+	// Enhanced safe markdown link handler supporting complete query strings
 	function parseMarkdown(text) {
 		if (!text) return '';
 		let html = text
 			.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
 			.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-			.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank"> $1 </a>');
+			// Matches both standard store links and long URL-encoded WhatsApp api links perfectly
+			.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
 		return html;
 	}
 
@@ -95,10 +93,13 @@
 
 			const data = await res.json();
 			
+			// Catch rate limit blocks (status 429 handled implicitly via missing data.reply) or general responses
 			if (data.reply) {
 				const newMsgIndex = messages.length;
 				messages = [...messages, { role: 'assistant', text: '' }];
 				typeWriter(data.reply, newMsgIndex);
+			} else if (data.error) {
+				messages = [...messages, { role: 'assistant', text: data.error }];
 			} else {
 				messages = [...messages, { role: 'assistant', text: 'Sorry, I am facing connectivity issues right now.' }];
 			}
@@ -157,7 +158,7 @@
 							on:click={() => handleQuickReply(reply.text)}
 							class="inline-flex items-center gap-1.5 text-xs bg-white text-gray-600 border border-gray-200 px-2.5 py-1.5 rounded-full hover:border-blue-500 hover:text-blue-600 transition shadow-sm text-left"
 						>
-							<Icon icon={reply.icon} class="w-4 h-4 text-gray-500 hover:text-blue-600" />
+							<Icon icon={reply.icon} class="w-4 h-4 text-gray-500" />
 							<span>{reply.label}</span>
 						</button>
 					{/each}
@@ -204,8 +205,9 @@
 	.fixed { position: fixed; }
 	.z-50 { z-index: 50; }
 	
+	/* Style standard product and business links */
 	:global(.chat-bubble a) {
-		color: #2563eb;
+		color: #1e40af;
 		text-decoration: underline;
 		font-weight: 600;
 	}
@@ -213,7 +215,22 @@
 		color: #ffffff !important;
 		text-decoration: underline;
 	}
-	:global(.chat-bubble a:hover) {
-		opacity: 0.85;
+	
+	/* Special styling for dynamic WhatsApp call-to-action links inside the chat box */
+	:global(.chat-bubble a[href*="wa.me"]) {
+		display: inline-flex;
+		align-items: center;
+		background-color: #25d366;
+		color: white !important;
+		padding: 0.35rem 0.75rem;
+		border-radius: 0.5rem;
+		text-decoration: none !important;
+		margin-top: 0.5rem;
+		font-weight: 500;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+		transition: opacity 0.2s;
+	}
+	:global(.chat-bubble a[href*="wa.me"]:hover) {
+		opacity: 0.9;
 	}
 </style>
