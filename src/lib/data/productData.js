@@ -251,7 +251,37 @@ Brake shoes, also known as brake linings serve a similar role as brake pads thou
 		imageUrl: 'image22.png',
 		description: `
 Also known as the friction disc,it is a flat,circular component made up of metal and covered with friction material on both sides.Sandwiched between the flywheel(connected to the engine) and the pressure plate,when engaged,the pressure plate presses the clutch plate tightly against the flywheel and vice-versa.Whenever there is a difficulty changing gears,a burning smell,vibration or chattering when releasing the clutch,then those are important indicators to change your worn out clutch plate.A clutch plate has a lifespan between 30,000 to 100,000 Km depending on one’s driving style and conditions.`
-	}
+	},
+{
+		id: '23',
+		price: '',
+		name: '5A-FE Engines',
+		category: 'engine-parts',
+		imageUrl: 'image23.png',
+		description: `
+	5A series lies among the development series of engines which began in the late 1970s,its production came in 2007.The Toyota A series are a family of inline-four internal combustion engines with displacement from 1.3L-1.8L,the cylinder block material is composed of cast iron and Aluminium.They offer good fuel efficiency and performance  in addition of having low emissions.
+    `
+  },
+  {
+		id: '24',
+		price: '',
+		name: '2ZR ENGINE',
+		category: 'engine-parts',
+		imageUrl: 'image24.png',
+		description: `
+Akin to the 5A series, the 2ZR series was introduced in 2007, the ZR engine is a family of straight four 16-valve all-aluminum and water cooled gasoline engines with a die cast aluminum block and variable valve timing. They are equipped with Toyota’s dual VVT-I technology that optimizes both intake and exhaust valve timing, with the first Valvematic system appearing on Noah and Voxy in 2007.Known for its fuel efficiency and reliability, it replaced the older 1ZZ-FE and is used in models such as corolla,prius,scion etc.
+    `
+  },
+{
+		id: '25',
+		price: '',
+		name: 'MR2 GEARBOX',
+		category: 'engine-parts',
+		imageUrl: 'image25.png',
+		description: `
+The name MR2 refers to mid-engine, rear-wheel-drive,2-seater,the prominent features of the MR2 includes is the 5-speed and 6-speed manual transmissions. Sequential MR2 transmissions exists with the oldest being the AW11 (1984-1989) which featured C525-speed manuals and the latest being the MR2 Spyder/ZZW30 which featured the C565-speed manual.
+    `
+  }
 ];
 
 export default productData;
