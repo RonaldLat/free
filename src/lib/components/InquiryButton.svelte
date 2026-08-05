@@ -22,6 +22,6 @@
 	on:click={() => sendWhatsApp(productName)}
 	class="bg-[#128c7d] rounded-md text-white text-xs text-center flex items-center space-x-1.5 self-center px-2 py-1.5"
 >
-	<span class="font-seri">Inquire</span>
+	<span class="font-seri">Add To Cart</span>
 	<Icon class="text-lg" icon="ic:sharp-whatsapp" />
 </button>
